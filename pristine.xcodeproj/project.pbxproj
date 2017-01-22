@@ -7,8 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B090629B1E348C47006F0C57 /* Marshal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B090629A1E348C47006F0C57 /* Marshal.framework */; };
+		B090629C1E348C47006F0C57 /* Marshal.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B090629A1E348C47006F0C57 /* Marshal.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B090629F1E348C4D006F0C57 /* Reactor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B090629E1E348C4D006F0C57 /* Reactor.framework */; };
+		B09062A01E348C4D006F0C57 /* Reactor.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B090629E1E348C4D006F0C57 /* Reactor.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B09062A21E348C52006F0C57 /* SwiftyBeaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09062A11E348C52006F0C57 /* SwiftyBeaver.framework */; };
+		B09062A31E348C52006F0C57 /* SwiftyBeaver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B09062A11E348C52006F0C57 /* SwiftyBeaver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B09062A51E348C58006F0C57 /* Whisper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B09062A41E348C58006F0C57 /* Whisper.framework */; };
+		B09062A61E348C58006F0C57 /* Whisper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B09062A41E348C58006F0C57 /* Whisper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B09062A91E348CD4006F0C57 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062A81E348CD4006F0C57 /* AppState.swift */; };
+		B09062AB1E348D6F006F0C57 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062AA1E348D6F006F0C57 /* Main.swift */; };
+		B09062AE1E349473006F0C57 /* LoggingMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062AD1E349473006F0C57 /* LoggingMiddleware.swift */; };
+		B09062B01E34963B006F0C57 /* SwiftyBeaver+Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062AF1E34963B006F0C57 /* SwiftyBeaver+Configure.swift */; };
+		B09062B21E3497F1006F0C57 /* ErrorEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062B11E3497F1006F0C57 /* ErrorEvents.swift */; };
+		B09062B41E350EA7006F0C57 /* AppMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062B31E350EA7006F0C57 /* AppMiddleware.swift */; };
 		B0FEF6071E346ADF007CFA72 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FEF6061E346ADF007CFA72 /* App.swift */; };
-		B0FEF6091E346ADF007CFA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FEF6081E346ADF007CFA72 /* ViewController.swift */; };
 		B0FEF60C1E346ADF007CFA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60A1E346ADF007CFA72 /* Main.storyboard */; };
 		B0FEF60E1E346ADF007CFA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */; };
 		B0FEF6111E346ADF007CFA72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60F1E346ADF007CFA72 /* LaunchScreen.storyboard */; };
@@ -33,10 +46,36 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B090629D1E348C47006F0C57 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B090629C1E348C47006F0C57 /* Marshal.framework in Embed Frameworks */,
+				B09062A31E348C52006F0C57 /* SwiftyBeaver.framework in Embed Frameworks */,
+				B09062A01E348C4D006F0C57 /* Reactor.framework in Embed Frameworks */,
+				B09062A61E348C58006F0C57 /* Whisper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		B090629A1E348C47006F0C57 /* Marshal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Marshal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B090629E1E348C4D006F0C57 /* Reactor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Reactor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09062A11E348C52006F0C57 /* SwiftyBeaver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyBeaver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09062A41E348C58006F0C57 /* Whisper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Whisper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B09062A81E348CD4006F0C57 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		B09062AA1E348D6F006F0C57 /* Main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		B09062AD1E349473006F0C57 /* LoggingMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingMiddleware.swift; sourceTree = "<group>"; };
+		B09062AF1E34963B006F0C57 /* SwiftyBeaver+Configure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyBeaver+Configure.swift"; sourceTree = "<group>"; };
+		B09062B11E3497F1006F0C57 /* ErrorEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorEvents.swift; sourceTree = "<group>"; };
+		B09062B31E350EA7006F0C57 /* AppMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMiddleware.swift; sourceTree = "<group>"; };
 		B0FEF6031E346ADF007CFA72 /* pristine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pristine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FEF6061E346ADF007CFA72 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		B0FEF6081E346ADF007CFA72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0FEF60B1E346ADF007CFA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B0FEF6101E346ADF007CFA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +93,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B090629B1E348C47006F0C57 /* Marshal.framework in Frameworks */,
+				B09062A21E348C52006F0C57 /* SwiftyBeaver.framework in Frameworks */,
+				B090629F1E348C4D006F0C57 /* Reactor.framework in Frameworks */,
+				B09062A51E348C58006F0C57 /* Whisper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,8 +121,78 @@
 			isa = PBXGroup;
 			children = (
 				B0FEF6041E346ADF007CFA72 /* Products */,
+				B09062A71E348C67006F0C57 /* Frameworks */,
 			);
 			name = ...;
+			sourceTree = "<group>";
+		};
+		B09062941E348B26006F0C57 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				B09062951E348B36006F0C57 /* States */,
+				B09062971E348B4A006F0C57 /* Events */,
+				B09062961E348B44006F0C57 /* Commands */,
+				B09062AC1E34943E006F0C57 /* Middleware */,
+			);
+			name = Reactor;
+			sourceTree = "<group>";
+		};
+		B09062951E348B36006F0C57 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				B09062A81E348CD4006F0C57 /* AppState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
+		B09062961E348B44006F0C57 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		B09062971E348B4A006F0C57 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				B09062B11E3497F1006F0C57 /* ErrorEvents.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		B09062981E348B91006F0C57 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B09062991E348B9E006F0C57 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				B09062AF1E34963B006F0C57 /* SwiftyBeaver+Configure.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		B09062A71E348C67006F0C57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B09062A41E348C58006F0C57 /* Whisper.framework */,
+				B09062A11E348C52006F0C57 /* SwiftyBeaver.framework */,
+				B090629E1E348C4D006F0C57 /* Reactor.framework */,
+				B090629A1E348C47006F0C57 /* Marshal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B09062AC1E34943E006F0C57 /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				B09062B31E350EA7006F0C57 /* AppMiddleware.swift */,
+				B09062AD1E349473006F0C57 /* LoggingMiddleware.swift */,
+			);
+			path = Middleware;
 			sourceTree = "<group>";
 		};
 		B0FEF5FA1E346ADF007CFA72 = {
@@ -105,7 +218,10 @@
 			isa = PBXGroup;
 			children = (
 				B0FEF6061E346ADF007CFA72 /* App.swift */,
+				B09062941E348B26006F0C57 /* Reactor */,
+				B09062981E348B91006F0C57 /* Data */,
 				B0FEF6361E346BF4007CFA72 /* UI */,
+				B09062991E348B9E006F0C57 /* Infrastructure */,
 				B0FEF6371E346BFE007CFA72 /* Resources */,
 			);
 			path = Sources;
@@ -144,9 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				B0FEF60A1E346ADF007CFA72 /* Main.storyboard */,
-				B0FEF6081E346ADF007CFA72 /* ViewController.swift */,
+				B09062AA1E348D6F006F0C57 /* Main.swift */,
 			);
-			name = UI;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		B0FEF6371E346BFE007CFA72 /* Resources */ = {
@@ -156,7 +272,7 @@
 				B0FEF60F1E346ADF007CFA72 /* LaunchScreen.storyboard */,
 				B0FEF6121E346ADF007CFA72 /* Info.plist */,
 			);
-			name = Resources;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +285,7 @@
 				B0FEF5FF1E346ADF007CFA72 /* Sources */,
 				B0FEF6001E346ADF007CFA72 /* Frameworks */,
 				B0FEF6011E346ADF007CFA72 /* Resources */,
+				B090629D1E348C47006F0C57 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,8 +413,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0FEF6091E346ADF007CFA72 /* ViewController.swift in Sources */,
+				B09062B01E34963B006F0C57 /* SwiftyBeaver+Configure.swift in Sources */,
+				B09062AB1E348D6F006F0C57 /* Main.swift in Sources */,
+				B09062B21E3497F1006F0C57 /* ErrorEvents.swift in Sources */,
+				B09062B41E350EA7006F0C57 /* AppMiddleware.swift in Sources */,
+				B09062A91E348CD4006F0C57 /* AppState.swift in Sources */,
 				B0FEF6071E346ADF007CFA72 /* App.swift in Sources */,
+				B09062AE1E349473006F0C57 /* LoggingMiddleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,7 +461,8 @@
 				B0FEF60B1E346ADF007CFA72 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
+			path = /Users/timshadel/projects/sandbox/pristine/Sources;
+			sourceTree = "<absolute>";
 		};
 		B0FEF60F1E346ADF007CFA72 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -347,7 +470,8 @@
 				B0FEF6101E346ADF007CFA72 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+			path = /Users/timshadel/projects/sandbox/pristine/Sources;
+			sourceTree = "<absolute>";
 		};
 /* End PBXVariantGroup section */
 
@@ -450,7 +574,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -463,7 +587,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = Sources/Info.plist;
+				INFOPLIST_FILE = Sources/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
