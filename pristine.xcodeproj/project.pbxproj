@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B0FEF6071E346ADF007CFA72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FEF6061E346ADF007CFA72 /* AppDelegate.swift */; };
+		B0FEF6071E346ADF007CFA72 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FEF6061E346ADF007CFA72 /* App.swift */; };
 		B0FEF6091E346ADF007CFA72 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FEF6081E346ADF007CFA72 /* ViewController.swift */; };
 		B0FEF60C1E346ADF007CFA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60A1E346ADF007CFA72 /* Main.storyboard */; };
 		B0FEF60E1E346ADF007CFA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */; };
@@ -35,7 +35,7 @@
 
 /* Begin PBXFileReference section */
 		B0FEF6031E346ADF007CFA72 /* pristine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pristine.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0FEF6061E346ADF007CFA72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B0FEF6061E346ADF007CFA72 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B0FEF6081E346ADF007CFA72 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B0FEF60B1E346ADF007CFA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,13 +74,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B09062931E347BA0006F0C57 /* ... */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEF6041E346ADF007CFA72 /* Products */,
+			);
+			name = ...;
+			sourceTree = "<group>";
+		};
 		B0FEF5FA1E346ADF007CFA72 = {
 			isa = PBXGroup;
 			children = (
-				B0FEF6051E346ADF007CFA72 /* pristine */,
-				B0FEF61A1E346ADF007CFA72 /* pristineTests */,
-				B0FEF6251E346ADF007CFA72 /* pristineUITests */,
-				B0FEF6041E346ADF007CFA72 /* Products */,
+				B0FEF6051E346ADF007CFA72 /* Sources */,
+				B0FEF6351E346B6F007CFA72 /* Tests */,
+				B09062931E347BA0006F0C57 /* ... */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,35 +101,62 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B0FEF6051E346ADF007CFA72 /* pristine */ = {
+		B0FEF6051E346ADF007CFA72 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B0FEF6061E346ADF007CFA72 /* AppDelegate.swift */,
-				B0FEF6081E346ADF007CFA72 /* ViewController.swift */,
-				B0FEF60A1E346ADF007CFA72 /* Main.storyboard */,
-				B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */,
-				B0FEF60F1E346ADF007CFA72 /* LaunchScreen.storyboard */,
-				B0FEF6121E346ADF007CFA72 /* Info.plist */,
+				B0FEF6061E346ADF007CFA72 /* App.swift */,
+				B0FEF6361E346BF4007CFA72 /* UI */,
+				B0FEF6371E346BFE007CFA72 /* Resources */,
 			);
-			path = pristine;
+			path = Sources;
 			sourceTree = "<group>";
 		};
-		B0FEF61A1E346ADF007CFA72 /* pristineTests */ = {
+		B0FEF61A1E346ADF007CFA72 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
 				B0FEF61B1E346ADF007CFA72 /* pristineTests.swift */,
 				B0FEF61D1E346ADF007CFA72 /* Info.plist */,
 			);
-			path = pristineTests;
+			name = Unit;
+			path = Tests/Unit;
 			sourceTree = "<group>";
 		};
-		B0FEF6251E346ADF007CFA72 /* pristineUITests */ = {
+		B0FEF6251E346ADF007CFA72 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				B0FEF6261E346ADF007CFA72 /* pristineUITests.swift */,
 				B0FEF6281E346ADF007CFA72 /* Info.plist */,
 			);
-			path = pristineUITests;
+			name = UI;
+			path = Tests/UI;
+			sourceTree = "<group>";
+		};
+		B0FEF6351E346B6F007CFA72 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEF61A1E346ADF007CFA72 /* Unit */,
+				B0FEF6251E346ADF007CFA72 /* UI */,
+			);
+			name = Tests;
+			sourceTree = "<group>";
+		};
+		B0FEF6361E346BF4007CFA72 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEF60A1E346ADF007CFA72 /* Main.storyboard */,
+				B0FEF6081E346ADF007CFA72 /* ViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		B0FEF6371E346BFE007CFA72 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */,
+				B0FEF60F1E346ADF007CFA72 /* LaunchScreen.storyboard */,
+				B0FEF6121E346ADF007CFA72 /* Info.plist */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0FEF6091E346ADF007CFA72 /* ViewController.swift in Sources */,
-				B0FEF6071E346ADF007CFA72 /* AppDelegate.swift in Sources */,
+				B0FEF6071E346ADF007CFA72 /* App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = pristine/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -429,7 +463,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = pristine/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristine;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -443,7 +477,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = pristineTests/Info.plist;
+				INFOPLIST_FILE = Tests/Unit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,7 +492,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = pristineTests/Info.plist;
+				INFOPLIST_FILE = Tests/Unit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristineTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -472,7 +506,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = pristineUITests/Info.plist;
+				INFOPLIST_FILE = Tests/UI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristineUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,7 +520,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = L4Y7P64253;
-				INFOPLIST_FILE = pristineUITests/Info.plist;
+				INFOPLIST_FILE = Tests/UI/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.daylogger.pristineUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -514,6 +548,7 @@
 				B0FEF62D1E346ADF007CFA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0FEF62E1E346ADF007CFA72 /* Build configuration list for PBXNativeTarget "pristineTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +557,7 @@
 				B0FEF6301E346ADF007CFA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B0FEF6311E346ADF007CFA72 /* Build configuration list for PBXNativeTarget "pristineUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +566,7 @@
 				B0FEF6331E346ADF007CFA72 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
