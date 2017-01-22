@@ -1,0 +1,12 @@
+[submodule "Carthage/Checkouts/Marshal"]
+	path = Carthage/Checkouts/Marshal
+	url = https://github.com/utahiosmac/Marshal.git
+[submodule "Carthage/Checkouts/Reactor"]
+	path = Carthage/Checkouts/Reactor
+	url = https://github.com/jarsen/Reactor.git
+[submodule "Carthage/Checkouts/SwiftyBeaver"]
+	path = Carthage/Checkouts/SwiftyBeaver
+	url = https://github.com/SwiftyBeaver/SwiftyBeaver.git
+[submodule "Carthage/Checkouts/Whisper"]
+	path = Carthage/Checkouts/Whisper
+	url = https://github.com/hyperoslo/Whisper.git
