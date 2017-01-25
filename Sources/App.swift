@@ -25,6 +25,7 @@ import UIKit
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         SwiftyBeaver.configure()
+        App.sharedCore.fire(event: AppStarted())
 
         return true
     }
