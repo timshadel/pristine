@@ -26,6 +26,7 @@ import UIKit
 
         SwiftyBeaver.configure()
         App.sharedCore.fire(event: AppStarted())
+        App.sharedCore.fire(command: GetWeather())
 
         return true
     }

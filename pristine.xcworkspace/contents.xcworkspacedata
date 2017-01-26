@@ -5,10 +5,19 @@
       location = "group:pristine.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Carthage/Checkouts/Alamofire/Alamofire.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/Marshal/Marshal.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/Reactor/Reactor.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/PromiseKit/PromiseKit.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Carthage/Checkouts/Alamofire-/PMKAlamofire.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Carthage/Checkouts/SwiftyBeaver/SwiftyBeaver.xcodeproj">

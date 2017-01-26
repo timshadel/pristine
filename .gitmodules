@@ -10,3 +10,12 @@
 [submodule "Carthage/Checkouts/Whisper"]
 	path = Carthage/Checkouts/Whisper
 	url = https://github.com/hyperoslo/Whisper.git
+[submodule "Carthage/Checkouts/PromiseKit"]
+	path = Carthage/Checkouts/PromiseKit
+	url = https://github.com/mxcl/PromiseKit.git
+[submodule "Carthage/Checkouts/Alamofire"]
+	path = Carthage/Checkouts/Alamofire
+	url = https://github.com/Alamofire/Alamofire.git
+[submodule "Carthage/Checkouts/Alamofire-"]
+	path = Carthage/Checkouts/Alamofire-
+	url = https://github.com/PromiseKit/Alamofire-.git

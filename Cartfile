@@ -1,7 +1,9 @@
 # Follow Bart's guide to dependencies
 # https://gist.github.com/bwhiteley/aa571da100bca3a65c1f
 
-github "jarsen/Reactor" ~> 0.5
 github "utahiosmac/Marshal" ~> 1.2
-github "hyperoslo/Whisper" ~> 4.0
+github "mxcl/PromiseKit" ~> 4.0
+github "PromiseKit/Alamofire-" ~> 1.0
+github "jarsen/Reactor" ~> 0.5
 github "SwiftyBeaver/SwiftyBeaver" ~> 1.1.0
+github "hyperoslo/Whisper" ~> 4.0

@@ -25,6 +25,14 @@
 		B0CB63B41E3820050062A9E7 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63B31E3820050062A9E7 /* Keys.swift */; };
 		B0CB63B61E3820DE0062A9E7 /* JSONObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63B51E3820DE0062A9E7 /* JSONObject+Extensions.swift */; };
 		B0CB63B81E3821A70062A9E7 /* BaseEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63B71E3821A70062A9E7 /* BaseEvents.swift */; };
+		B0CB63C21E3957BB0062A9E7 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C11E3957BB0062A9E7 /* PromiseKit.framework */; };
+		B0CB63C31E3957BB0062A9E7 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C11E3957BB0062A9E7 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0CB63C51E3960BF0062A9E7 /* GetWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63C41E3960BF0062A9E7 /* GetWeather.swift */; };
+		B0CB63C71E39619B0062A9E7 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C61E39619B0062A9E7 /* Alamofire.framework */; };
+		B0CB63C81E39619B0062A9E7 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C61E39619B0062A9E7 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0CB63CA1E3961A20062A9E7 /* PMKAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C91E3961A20062A9E7 /* PMKAlamofire.framework */; };
+		B0CB63CB1E3961A20062A9E7 /* PMKAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C91E3961A20062A9E7 /* PMKAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B0CB63CD1E39640D0062A9E7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63CC1E39640D0062A9E7 /* Request.swift */; };
 		B0FEF6071E346ADF007CFA72 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FEF6061E346ADF007CFA72 /* App.swift */; };
 		B0FEF60C1E346ADF007CFA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60A1E346ADF007CFA72 /* Main.storyboard */; };
 		B0FEF60E1E346ADF007CFA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */; };
@@ -58,8 +66,11 @@
 			dstSubfolderSpec = 10;
 			files = (
 				B090629C1E348C47006F0C57 /* Marshal.framework in Embed Frameworks */,
+				B0CB63C81E39619B0062A9E7 /* Alamofire.framework in Embed Frameworks */,
 				B09062A31E348C52006F0C57 /* SwiftyBeaver.framework in Embed Frameworks */,
+				B0CB63C31E3957BB0062A9E7 /* PromiseKit.framework in Embed Frameworks */,
 				B09062A01E348C4D006F0C57 /* Reactor.framework in Embed Frameworks */,
+				B0CB63CB1E3961A20062A9E7 /* PMKAlamofire.framework in Embed Frameworks */,
 				B09062A61E348C58006F0C57 /* Whisper.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -82,6 +93,11 @@
 		B0CB63B31E3820050062A9E7 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B0CB63B51E3820DE0062A9E7 /* JSONObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONObject+Extensions.swift"; sourceTree = "<group>"; };
 		B0CB63B71E3821A70062A9E7 /* BaseEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseEvents.swift; sourceTree = "<group>"; };
+		B0CB63C11E3957BB0062A9E7 /* PromiseKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PromiseKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CB63C41E3960BF0062A9E7 /* GetWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetWeather.swift; sourceTree = "<group>"; };
+		B0CB63C61E39619B0062A9E7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CB63C91E3961A20062A9E7 /* PMKAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PMKAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0CB63CC1E39640D0062A9E7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		B0FEF6031E346ADF007CFA72 /* pristine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pristine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FEF6061E346ADF007CFA72 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B0FEF60B1E346ADF007CFA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,8 +118,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B090629B1E348C47006F0C57 /* Marshal.framework in Frameworks */,
+				B0CB63C71E39619B0062A9E7 /* Alamofire.framework in Frameworks */,
 				B09062A21E348C52006F0C57 /* SwiftyBeaver.framework in Frameworks */,
+				B0CB63C21E3957BB0062A9E7 /* PromiseKit.framework in Frameworks */,
 				B090629F1E348C4D006F0C57 /* Reactor.framework in Frameworks */,
+				B0CB63CA1E3961A20062A9E7 /* PMKAlamofire.framework in Frameworks */,
 				B09062A51E348C58006F0C57 /* Whisper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,6 +175,7 @@
 		B09062961E348B44006F0C57 /* Commands */ = {
 			isa = PBXGroup;
 			children = (
+				B0CB63C41E3960BF0062A9E7 /* GetWeather.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -166,6 +186,7 @@
 				B0CB63B71E3821A70062A9E7 /* BaseEvents.swift */,
 				B0CB63B11E381F090062A9E7 /* AppEvents.swift */,
 				B09062B11E3497F1006F0C57 /* ErrorEvents.swift */,
+				B0CB63CC1E39640D0062A9E7 /* Request.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -190,10 +211,13 @@
 		B09062A71E348C67006F0C57 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B09062A41E348C58006F0C57 /* Whisper.framework */,
-				B09062A11E348C52006F0C57 /* SwiftyBeaver.framework */,
-				B090629E1E348C4D006F0C57 /* Reactor.framework */,
+				B0CB63C61E39619B0062A9E7 /* Alamofire.framework */,
 				B090629A1E348C47006F0C57 /* Marshal.framework */,
+				B0CB63C91E3961A20062A9E7 /* PMKAlamofire.framework */,
+				B0CB63C11E3957BB0062A9E7 /* PromiseKit.framework */,
+				B090629E1E348C4D006F0C57 /* Reactor.framework */,
+				B09062A11E348C52006F0C57 /* SwiftyBeaver.framework */,
+				B09062A41E348C58006F0C57 /* Whisper.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -426,8 +450,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CB63B81E3821A70062A9E7 /* BaseEvents.swift in Sources */,
+				B0CB63CD1E39640D0062A9E7 /* Request.swift in Sources */,
 				B0CB63B21E381F090062A9E7 /* AppEvents.swift in Sources */,
 				B09062B01E34963B006F0C57 /* SwiftyBeaver+Configure.swift in Sources */,
+				B0CB63C51E3960BF0062A9E7 /* GetWeather.swift in Sources */,
 				B09062AB1E348D6F006F0C57 /* Main.swift in Sources */,
 				B09062B21E3497F1006F0C57 /* ErrorEvents.swift in Sources */,
 				B09062B41E350EA7006F0C57 /* AppMiddleware.swift in Sources */,
