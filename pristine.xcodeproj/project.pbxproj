@@ -34,6 +34,10 @@
 		B0CB63CA1E3961A20062A9E7 /* PMKAlamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C91E3961A20062A9E7 /* PMKAlamofire.framework */; };
 		B0CB63CB1E3961A20062A9E7 /* PMKAlamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B0CB63C91E3961A20062A9E7 /* PMKAlamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B0CB63CD1E39640D0062A9E7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63CC1E39640D0062A9E7 /* Request.swift */; };
+		B0D655CA1E4E2CD10052DF29 /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0D655C61E4E2CD10052DF29 /* ProximaNova-Light.otf */; };
+		B0D655CB1E4E2CD10052DF29 /* ProximaNova-Regular-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0D655C71E4E2CD10052DF29 /* ProximaNova-Regular-Italic.otf */; };
+		B0D655CC1E4E2CD10052DF29 /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0D655C81E4E2CD10052DF29 /* ProximaNova-Regular.otf */; };
+		B0D655CD1E4E2CD10052DF29 /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = B0D655C91E4E2CD10052DF29 /* ProximaNova-Semibold.otf */; };
 		B0FEF6071E346ADF007CFA72 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0FEF6061E346ADF007CFA72 /* App.swift */; };
 		B0FEF60C1E346ADF007CFA72 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60A1E346ADF007CFA72 /* Main.storyboard */; };
 		B0FEF60E1E346ADF007CFA72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */; };
@@ -100,6 +104,10 @@
 		B0CB63C61E39619B0062A9E7 /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CB63C91E3961A20062A9E7 /* PMKAlamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = PMKAlamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CB63CC1E39640D0062A9E7 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		B0D655C61E4E2CD10052DF29 /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		B0D655C71E4E2CD10052DF29 /* ProximaNova-Regular-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular-Italic.otf"; sourceTree = "<group>"; };
+		B0D655C81E4E2CD10052DF29 /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		B0D655C91E4E2CD10052DF29 /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
 		B0FEF6031E346ADF007CFA72 /* pristine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pristine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0FEF6061E346ADF007CFA72 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		B0FEF60B1E346ADF007CFA72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -234,6 +242,17 @@
 			path = Middleware;
 			sourceTree = "<group>";
 		};
+		B0D655CF1E4E2CDC0052DF29 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B0D655C61E4E2CD10052DF29 /* ProximaNova-Light.otf */,
+				B0D655C71E4E2CD10052DF29 /* ProximaNova-Regular-Italic.otf */,
+				B0D655C81E4E2CD10052DF29 /* ProximaNova-Regular.otf */,
+				B0D655C91E4E2CD10052DF29 /* ProximaNova-Semibold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		B0FEF5FA1E346ADF007CFA72 = {
 			isa = PBXGroup;
 			children = (
@@ -307,6 +326,7 @@
 		B0FEF6371E346BFE007CFA72 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0D655CF1E4E2CDC0052DF29 /* Fonts */,
 				B0FEF60D1E346ADF007CFA72 /* Assets.xcassets */,
 				B0FEF60F1E346ADF007CFA72 /* LaunchScreen.storyboard */,
 				B0FEF6121E346ADF007CFA72 /* Info.plist */,
@@ -426,8 +446,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0FEF6111E346ADF007CFA72 /* LaunchScreen.storyboard in Resources */,
+				B0D655CB1E4E2CD10052DF29 /* ProximaNova-Regular-Italic.otf in Resources */,
+				B0D655CA1E4E2CD10052DF29 /* ProximaNova-Light.otf in Resources */,
 				B0FEF60E1E346ADF007CFA72 /* Assets.xcassets in Resources */,
 				B0FEF60C1E346ADF007CFA72 /* Main.storyboard in Resources */,
+				B0D655CC1E4E2CD10052DF29 /* ProximaNova-Regular.otf in Resources */,
+				B0D655CD1E4E2CD10052DF29 /* ProximaNova-Semibold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
