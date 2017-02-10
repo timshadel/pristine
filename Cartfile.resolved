@@ -1,7 +1,7 @@
 github "Alamofire/Alamofire" "4.3.0"
 github "utahiosmac/Marshal" "1.2.4"
 github "mxcl/PromiseKit" "4.1.4"
-github "jarsen/Reactor" "v0.5.2"
+github "timshadel/Reactor" "1430e7a44dbb1992940059a3188effbc0ed6dc79"
 github "SwiftyBeaver/SwiftyBeaver" "1.1.1"
 github "hyperoslo/Whisper" "4.0.0"
 github "PromiseKit/Alamofire-" "1.1.0"

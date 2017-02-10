@@ -21,6 +21,7 @@
 		B09062B01E34963B006F0C57 /* SwiftyBeaver+Configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062AF1E34963B006F0C57 /* SwiftyBeaver+Configure.swift */; };
 		B09062B21E3497F1006F0C57 /* ErrorEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062B11E3497F1006F0C57 /* ErrorEvents.swift */; };
 		B09062B41E350EA7006F0C57 /* AppMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09062B31E350EA7006F0C57 /* AppMiddleware.swift */; };
+		B09BABD41E4A2E4000D72B01 /* TimeChanged.swift in Sources */ = {isa = PBXBuildFile; fileRef = B09BABD31E4A2E4000D72B01 /* TimeChanged.swift */; };
 		B0CB63B21E381F090062A9E7 /* AppEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63B11E381F090062A9E7 /* AppEvents.swift */; };
 		B0CB63B41E3820050062A9E7 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63B31E3820050062A9E7 /* Keys.swift */; };
 		B0CB63B61E3820DE0062A9E7 /* JSONObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0CB63B51E3820DE0062A9E7 /* JSONObject+Extensions.swift */; };
@@ -89,6 +90,7 @@
 		B09062AF1E34963B006F0C57 /* SwiftyBeaver+Configure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwiftyBeaver+Configure.swift"; sourceTree = "<group>"; };
 		B09062B11E3497F1006F0C57 /* ErrorEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorEvents.swift; sourceTree = "<group>"; };
 		B09062B31E350EA7006F0C57 /* AppMiddleware.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMiddleware.swift; sourceTree = "<group>"; };
+		B09BABD31E4A2E4000D72B01 /* TimeChanged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeChanged.swift; sourceTree = "<group>"; };
 		B0CB63B11E381F090062A9E7 /* AppEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEvents.swift; sourceTree = "<group>"; };
 		B0CB63B31E3820050062A9E7 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
 		B0CB63B51E3820DE0062A9E7 /* JSONObject+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONObject+Extensions.swift"; sourceTree = "<group>"; };
@@ -187,6 +189,7 @@
 				B0CB63B11E381F090062A9E7 /* AppEvents.swift */,
 				B09062B11E3497F1006F0C57 /* ErrorEvents.swift */,
 				B0CB63CC1E39640D0062A9E7 /* Request.swift */,
+				B09BABD31E4A2E4000D72B01 /* TimeChanged.swift */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0CB63B81E3821A70062A9E7 /* BaseEvents.swift in Sources */,
+				B09BABD41E4A2E4000D72B01 /* TimeChanged.swift in Sources */,
 				B0CB63CD1E39640D0062A9E7 /* Request.swift in Sources */,
 				B0CB63B21E381F090062A9E7 /* AppEvents.swift in Sources */,
 				B09062B01E34963B006F0C57 /* SwiftyBeaver+Configure.swift in Sources */,

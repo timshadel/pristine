@@ -42,6 +42,14 @@ extension Measurement where UnitType: UnitTemperature {
 
 struct GetWeather: Command {
 
+    let waitUntil: Date = Date(timeIntervalSinceNow: 5)
+
+    func canExecute(state: AppState) -> Bool {
+        let result = waitUntil < Date()
+        print("canExecute: \(result)")
+        return result
+    }
+
     func execute(state: AppState, core: Core<AppState>) {
         firstly { _ -> Promise<JSONObject> in
             core.fire(event: Request<Weather>.sent(at: Date()))

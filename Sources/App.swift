@@ -27,6 +27,9 @@ import UIKit
         SwiftyBeaver.configure()
         App.sharedCore.fire(event: AppStarted())
         App.sharedCore.fire(command: GetWeather())
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 6) {
+            App.sharedCore.fire(event: TimeChanged(to: Date()))
+        }
 
         return true
     }
