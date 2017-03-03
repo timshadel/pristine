@@ -1,4 +1,5 @@
+github "Instagram/IGListKit" "2.1.0"
 github "utahiosmac/Marshal" "1.2.4"
 github "jarsen/Reactor" "v0.5.2"
-github "SwiftyBeaver/SwiftyBeaver" "1.1.1"
+github "SwiftyBeaver/SwiftyBeaver" "1.1.3"
 github "hyperoslo/Whisper" "4.0.0"

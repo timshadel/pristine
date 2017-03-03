@@ -10,3 +10,6 @@
 [submodule "Carthage/Checkouts/Whisper"]
 	path = Carthage/Checkouts/Whisper
 	url = https://github.com/hyperoslo/Whisper.git
+[submodule "Carthage/Checkouts/IGListKit"]
+	path = Carthage/Checkouts/IGListKit
+	url = https://github.com/Instagram/IGListKit.git

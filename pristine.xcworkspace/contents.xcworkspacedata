@@ -8,6 +8,9 @@
       location = "group:Carthage/Checkouts/Marshal/Marshal.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:Carthage/Checkouts/IGListKit/IGListKit.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Carthage/Checkouts/Reactor/Reactor.xcodeproj">
    </FileRef>
    <FileRef
